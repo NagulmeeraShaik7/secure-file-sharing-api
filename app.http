@@ -1,0 +1,42 @@
+POST http://localhost:3000/ops/login
+Content-Type: application/json
+
+{
+  "email": "ops_user@example.com",
+  "password": "ops_password"
+}
+#### 
+
+POST http://localhost:3000/ops/upload
+Authorization: Bearer <token>
+Content-Type: multipart/form-data
+#### 
+
+POST http://localhost:3000/client/signup
+Content-Type: application/json
+
+{
+  "email": "client@example.com",
+  "password": "password123"
+}
+#### 
+
+POST http://localhost:3000/client/login
+Content-Type: application/json
+
+{
+  "email": "client@example.com",
+  "password": "password123"
+}
+###
+
+GET http://localhost:3000/client/files
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImNsaWVudCIsImlhdCI6MTczMTkwNDE4NywiZXhwIjoxNzMxOTA3Nzg3fQ.qu-mQydmh0Zi8lZ4U6GvN5dGscgxRGYrkNwqieljjZY
+#### 
+
+
+
+GET http://localhost:3000/client/download/1
+Authorization: Bearer <token>
+#### 
+
